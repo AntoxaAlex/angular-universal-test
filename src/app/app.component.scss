@@ -1,0 +1,56 @@
+@import "src/variables";
+
+.main-container {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.heading {
+  font-size: 8vw;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-item {
+  background-color: $white;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 200;
+  list-style: none;
+  text-indent: 10px;
+}
+
+.content-item::first-letter {
+  color: $red;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (min-width: $media-600px) {
+  .content-list {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-column-gap: 10px;
+  }
+}
+
+@media (min-width: $media-1024px) {
+  .content-list {
+    grid-template-columns: 30vw 30vw 30vw;
+  }
+}
