@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/variables";
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;1,200&display=swap');
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
